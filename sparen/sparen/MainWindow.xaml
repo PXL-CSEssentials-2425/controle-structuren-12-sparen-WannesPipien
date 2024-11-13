@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sparen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Berekenen: Hoeveel weken tot eindbedrag?" Height="450" Width="800">
     <Grid>
         <Label Content="Weekgeld:" HorizontalAlignment="Left" Margin="131,86,0,0" VerticalAlignment="Top"/>
         <Label Content="Weekelijkse verhooging:" HorizontalAlignment="Left" Margin="58,128,0,0" VerticalAlignment="Top"/>
@@ -17,6 +17,7 @@
         <Button x:Name="calculateButton" Content="Bereken" HorizontalAlignment="Center" Margin="0,83,0,0" VerticalAlignment="Top" Height="32" Width="56" Click="calculateButton_Click"/>
         <Button x:Name="eraseButton" Content="Wissen" HorizontalAlignment="Center" Margin="0,125,0,0" VerticalAlignment="Top" Height="32" Width="56" Click="eraseButton_Click"/>
         <Button x:Name="closeButton" Content="Afsluiten" HorizontalAlignment="Center" Margin="0,165,0,0" VerticalAlignment="Top" Height="32" Width="56" Click="closeButton_Click"/>
+     
 
     </Grid>
 </Window>

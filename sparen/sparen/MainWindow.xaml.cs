@@ -23,7 +23,22 @@ namespace sparen
 
         private void calculateButton_Click(object sender, RoutedEventArgs e)
         {
+            float initialamount = float.Parse(initialAmountTextBox.Text);
+            float amount = initialamount;
+            float verhooging = float.Parse(weeklyInctreaseTextBox.Text);
+            float wanted = float.Parse(finalAmountTextBox.Text);
+            int time = 1;
+            float totalamount = initialamount;
+            float incteaseAmount = (initialamount * verhooging);
 
+            do
+            {
+                amount += (incteaseAmount);
+                totalamount += amount;
+                time++;
+            } while (totalamount < wanted);
+
+            resultTextBox.Text = $"Sparen na {time} weken: {totalamount}\n\nExtra weekgeld op dat moment: {amount}.\n\nTotaal spaargeld: {amount + totalamount}.";
         }
 
         private void eraseButton_Click(object sender, RoutedEventArgs e)
